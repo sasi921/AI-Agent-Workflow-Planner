@@ -1,0 +1,6 @@
+{
+  "steps": [
+    {"id": "inspect", "tool": "word_count", "args": {"text": "A reliable workflow needs explicit dependencies and approval gates."}},
+    {"id": "publish", "tool": "uppercase", "args": {"text": "Ready to publish"}, "depends_on": ["inspect"], "requires_approval": true}
+  ]
+}
